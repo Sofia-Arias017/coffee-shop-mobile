@@ -1,0 +1,47 @@
+:root{
+    --color-1: #C67C4E;
+    --color-2: #EDD6C8;
+    --color-3: #313131;
+    --color-4: #E3E3E3;
+    --color-5: #F9F2ED;
+}
+
+@font-face {
+    font-family:"Sora-Bold" ;
+    src: url(../stora/font/Sora/static/Sora-Bold.ttf);
+}
+
+@font-face {
+    font-family:"Sora-ExtraBold" ;
+    src: url(../stora/font/Sora/static/Sora-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family:"Sora-ExtraLight" ;
+    src: url(../stora/font/Sora/static/Sora-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family:"Sora-Light" ;
+    src: url(../stora/font/Sora/static/Sora-Light.ttf);
+}
+
+@font-face {
+    font-family:"Sora-Medium" ;
+    src: url(../stora/font/Sora/static/Sora-Medium.ttf);
+}
+
+@font-face {
+    font-family:"Sora-Regular" ;
+    src: url(../stora/font/Sora/static/Sora-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Sora-SemiBold" ;
+    src: url(../stora/font/Sora/static/Sora-SemiBold.ttf);
+}
+
+@font-face {
+    font-family:"Sora-Thin" ;
+    src: url(../stora/font/Sora/static/Sora-Thin.ttf);
+}
