@@ -88,3 +88,25 @@ body {
     font-size: 14px;
     color: #333;
 }
+
+.size_h3 {
+    margin: 15px 0 10px;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-btn {
+    padding: 10px 15px;
+    border: 1px solid gray;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.size-btn.active {
+    background: black;
+    color: white;
+}
