@@ -1,3 +1,71 @@
 body {
     margin: 0; /* Elimina márgenes del body */
 }
+.tittle {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding:0px 0px;
+    border-bottom: 1px solid #E0E0E0;
+    height: 50px; /* Manteniendo la altura */
+}
+
+.tittle h1 {
+    margin-left: 95px;
+    background-color: red;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px; /* Manteniendo el tamaño sin width fijo */
+    text-align: center;
+    display: inline-block; /* Se adapta al texto */
+    white-space: nowrap; /* Evita saltos de línea */
+    color: black;
+}
+
+.atras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; /* Manteniendo tamaño */
+    height: 44px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 24px;
+    border-radius: 12px;
+}
+/* Cambio de color cuando el cursor pasa encima */
+.atras:hover {
+    background-color: darkblue; /* Color al pasar el cursor */
+}
+/* Cambio de color cuando se hace clic */
+.atras:active {
+    background-color: blak; /* Color al hacer clic */
+}
+
+.delivery-container {
+    display: flex;
+    width: 300px; /* Ajusta según lo necesario */
+    height: 50px;
+    background-color: #F5F5F5; /* Fondo gris */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+.delivery-option {
+    flex: 1; /* Ambos botones ocupan el mismo espacio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: black; /* Color de texto */
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #B87333; /* Color marrón */
+    color: white;
+}
