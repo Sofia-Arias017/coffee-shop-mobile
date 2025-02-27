@@ -27,6 +27,7 @@ body {
 
 /* Botón atrás */
 .atras {
+    margin-left: 24px;
     margin-top: 20px;
     position: absolute;
     left: 10px; /* Se mantiene fijo en la izquierda */
@@ -96,6 +97,8 @@ body {
     color: white;
 }
 .info{
+    position: relative; /* Permite usar left */
+    left: 24px;
     margin: 0;
     margin-top: 24px;
     flex-direction: column;
@@ -113,7 +116,14 @@ body {
     font-size: 12px;
     display: block;
 }
+.edit{
+    display: flex;
+    width: 229px;
+    height: 26px;
+    gap: 8px;
+}
 .btn-edit {
+    border: 1px solid black;
     display: flex;
     align-items: center; /* Centra icono y texto verticalmente */
     justify-content: center; /* Centra todo el contenido horizontalmente */
@@ -125,12 +135,10 @@ body {
     font-size: 12px;
     text-align: center;
     
-    background-color: red;
     color: black;
     text-decoration: none;
     border-radius: 16px;
     
-    border: none;
     cursor: pointer;
 }
 
@@ -139,14 +147,9 @@ body {
     height: 14px;
     display: inline-block; /* Cambio importante */
 }
-.edit{
-    background-color: blue;
-    display: flex;
-    width: 229px;
-    height: 26px;
-    gap: 8px;
-}
+
 .btn-edit2 {
+    border: 1px solid black;
     display: flex;
     align-items: center; /* Centra icono y texto verticalmente */
     justify-content: center; /* Centra todo el contenido horizontalmente */
@@ -158,12 +161,10 @@ body {
     font-size: 12px;
     text-align: center;
     
-    background-color: red;
     color: black;
     text-decoration: none;
     border-radius: 16px;
     
-    border: none;
     cursor: pointer;
 }
 
@@ -171,4 +172,116 @@ body {
     width: 14px;
     height: 14px;
     display: inline-block; /* Cambio importante */
+}
+
+.order{
+    position: relative; /* Permite usar left */
+    left: 24px;
+    margin-top: 16px;
+    display: flex;
+    width: 327px;
+    height: 54px;
+}
+.order img{
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+}
+.text-order{
+    margin-left: 16px;
+    margin-top: 6px;
+}
+.order h1{
+    margin: 0;
+    width: 103px;
+    height: 24px;
+    font-size: 16px;
+}
+.order h3{
+    margin: 0;
+    width: 69px;
+    height: 14px;
+    font-size: 12px;
+}
+.button-selection{
+    margin-left: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.counter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.counter-button img{
+    width: 100%;  /* Ajusta el tamaño de la imagen */
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+.counter-value {
+    font-size: 14px;
+    text-align: center;
+}
+.descuento {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    border-radius: 16px;
+    width: 327px;
+    height: 56px;
+    background-color: #ccc;
+    margin: 0 auto; /* Centra horizontalmente */
+    padding-left: 16px; /* Espacio desde la izquierda */
+}
+
+.descuento img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px; /* Espacio entre la imagen y el texto */
+}
+
+.descuento .text {
+    width: 149px !important;
+    height: 21px !important;
+    margin-top: 5px !important;
+    font-size: 14px !important;
+}
+.img2{
+    width: 20px !important;
+    height:20px !important;
+    margin-left: 96.46px;
+    display: block; /* Asegura que respete el tamaño */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+.payment{
+    background-color: yellow;
+   
+}
+.payment h1{
+    font-size: 16px;
+}
+.label{
+    font-size: 14px;
+    background-color: blue;
+}
+.row-payment{
+    font-size: 14px;
+    background-color: red;
+    display: flex;
+}
+.payment.price{
+    margin-left: 247;
 }
