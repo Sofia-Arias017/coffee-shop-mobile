@@ -14,10 +14,10 @@ body {
 
 /* Título centrado */
 .tittle h1 {
-    margin-top: 20px;
+    top: 20px;
     font-size: 20px;
     font-weight: bold;
-    margin: 0;
+    /*margin: 0;*/
     text-align: center;
     white-space: nowrap;
     position: absolute;
@@ -58,13 +58,19 @@ body {
 
 /* Contenedor de los botones */
 .delivery-container {
+    width: 327px;
+    height: 43px;
     margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .delivery-option {
+    border-radius: 8px;
+    margin: 4px;
     flex: 1;
     text-align: center;
     padding: 10px;
@@ -88,4 +94,49 @@ body {
 .delivery-container:has(.delivery-option:nth-child(2):hover) .delivery-option:nth-child(2) {
     background-color: #B87333;
     color: white;
+}
+.info{
+    margin: 0;
+    margin-top: 24px;
+    flex-direction: column;
+}
+.info h1{
+    font-size: 16px;
+}
+.info h2{
+    margin-top: 16px;
+    font-size: 14px;
+    display: block;
+}
+.info h3{
+    margin-top: -8px;
+    font-size: 12px;
+    display: block;
+}
+.btn-edit1{
+    display: inline-block;
+    width: 120px;
+    height: 26px;
+    font-size: 12px;
+    text-align: center;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 16px;
+    color: black;
+}
+.btn-edit2{
+    display: inline-block;
+    width: 101px;
+    height: 26px;
+    margin-top: -200px;
+    font-size: 12px;
+    text-align: center;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 16px;
+    color: black;
+}
+
+.btn-edit1 img{
+    margin-top: 4px;
 }
