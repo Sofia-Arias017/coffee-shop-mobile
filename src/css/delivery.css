@@ -18,14 +18,17 @@ body{
     align-items: center;
 
 }
-.arrow{
-    margin-right: auto;
+.arrow{ 
+    text-decoration: none; 
+    display: flex; /* Habilita flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    background-color: var(--color-4);
     width: 44px;
     height: 44px;
     border-radius: 12px;
     margin-left: 24px;
-    align-items: right;
-    border-color: transparent;
+    border: none;
     font-size: 20px;
     color: var(--COLOR-16);
 }
@@ -155,4 +158,94 @@ footer{
     width: 44px;
     height: 44px;
     background-color: var(--color-6);
+}
+.delivered{
+    width: 243px;
+    height: 61px;
+    /* background-color: brown; */
+    position: absolute;
+    margin: 8px 0px 8px 84px;
+}
+.delivered-order{
+    font-family: "Sora-SemiBold";
+    font-size: 14px;
+    color: var(--color-7);
+    align-items: left;
+    /* background-color: blue; */
+}
+.information{
+    font-family: "Sora-Light";
+    font-size: 12px;
+    color: var(--color-8);
+    align-items: left;
+    /* background-color: greenyellow; */
+    margin-top: 4px;
+}
+.domiciliary{
+    position: absolute;
+    width: 100%;
+    /* background-color: blueviolet; */
+    height: 56px;
+    margin-top: 216px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.domiciliary-box{
+    width: 327px;
+    height: 100%;
+    /* background-color: darkmagenta; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 207px;
+    height: 56px;
+    /* background-color: darkorange;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.box img{
+    border-radius: 12px;
+}
+.box-text{
+    width: 135px;
+    height: 39px;
+    margin-left: auto;
+    /* background-color: darkred; */
+}
+.name{
+    font-family: "Sora-SemiBold";
+    font-size: 14px;
+    color: var(--color-7);
+}
+.work{
+    font-family: "Sora-Regular";
+    font-size: 12px;
+    color: var(--color-8);
+    margin-top: 4px;
+}
+.phone{
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    background-color: white;
+    color: var(--COLOR-16);
+}
+
+.phone:hover {
+    background-color: var(--color-8);
+    color: white;
+}
+
+.phone:active {
+    background-color: var(--color-3);
+    color: white;
 }
