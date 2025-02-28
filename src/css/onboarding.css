@@ -1,0 +1,83 @@
+@import url("../css/variables.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top,black 50%,transparent );
+    top: 480px
+}
+.title-box{
+    position: absolute;
+    width: 327px;
+    height: 144px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* background-color: aqua; */
+}
+.title{
+    font-family: "Sora-SemiBold";
+    font-size: 32px;
+    color: var(--color-6);
+    text-align: center;
+}
+.subtitle-box{
+    position: absolute;
+    width: 327px;
+    height: 42px;
+    top: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+.subtitle{
+    font-family: "Sora-Regular";
+    font-size: 14px;
+    color: var(--color-8);
+    text-align: center;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    top: 480px
+}
+.started{
+    font-family: "Sora-SemiBold";
+    font-size: 16px;
+    color: var(--color-6);
+    text-align: center;
+    margin: 250px auto; 
+    width: 327px;
+    height: 56px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border-color: transparent;
+    text-decoration: none;
+}
