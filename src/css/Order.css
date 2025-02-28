@@ -1,9 +1,11 @@
 @import url(variables.css);
 body {
+    background-color: var(--color-22);
     margin: 0; /* Elimina márgenes del body */
 }
 /* Contenedor del título */
 .tittle {
+    font-family: "Sora-SemiBold" ;
     position: relative;
     width: 100%;
     height: 60px;
@@ -16,7 +18,7 @@ body {
 .tittle h1 {
     top: 20px;
     font-size: 20px;
-    font-weight: bold;
+    font-family: "Sora-SemiBold" ;
     /*margin: 0;*/
     text-align: center;
     white-space: nowrap;
@@ -38,18 +40,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-size: 20px;
     cursor: pointer;
     border-radius: 12px;
-    background-color: gray;
     border: none;
 }
 
 
 /* Cambio de color cuando el cursor pasa encima */
 .atras:hover {
-    background-color: darkblue;
+    background-color: var(--color-8);
 }
 
 /* Cambio de color cuando se hace clic */
@@ -59,6 +59,7 @@ body {
 
 /* Contenedor de los botones */
 .delivery-container {
+    background-color: var(--color-4);
     width: 327px;
     height: 43px;
     margin-top: 24px;
@@ -70,6 +71,7 @@ body {
 }
 
 .delivery-option {
+    font-family: "Sora-SemiBold" ;
     border-radius: 8px;
     margin: 4px;
     flex: 1;
@@ -78,22 +80,22 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: black;
-    background-color: #F5F5F5;
+    background-color: var(--color-4);
 }
 
 .delivery-option.selected {
-    background-color: #B87333;
+    background-color: var(--color-1);
     color: white;
 }
 
 /* Alternar el color cuando se hace clic */
 .delivery-container:has(.delivery-option:nth-child(2):hover) .delivery-option {
-    background-color: #F5F5F5;
+    background-color: var(--color-4);
     color: black;
 }
 
 .delivery-container:has(.delivery-option:nth-child(2):hover) .delivery-option:nth-child(2) {
-    background-color: #B87333;
+    background-color: var(--color-1);
     color: white;
 }
 .info{
@@ -104,25 +106,31 @@ body {
     flex-direction: column;
 }
 .info h1{
+    font-family: "Sora-SemiBold" ;
     font-size: 16px;
 }
 .info h2{
+    font-family: "Sora-SemiBold" ;
     margin-top: 16px;
     font-size: 14px;
     display: block;
 }
 .info h3{
+    color: var(--color-8);
+    font-family: "Sora-Regular";
     margin-top: -8px;
     font-size: 12px;
     display: block;
 }
 .edit{
+    font-family: "Sora-Regular";
     display: flex;
     width: 229px;
     height: 26px;
     gap: 8px;
 }
 .btn-edit {
+    background-color: var(--color-6);
     border: 1px solid black;
     display: flex;
     align-items: center; /* Centra icono y texto verticalmente */
@@ -149,6 +157,7 @@ body {
 }
 
 .btn-edit2 {
+    background-color: var(--color-6);
     border: 1px solid black;
     display: flex;
     align-items: center; /* Centra icono y texto verticalmente */
@@ -192,12 +201,14 @@ body {
     margin-top: 6px;
 }
 .order h1{
+    font-family: "Sora-SemiBold";
     margin: 0;
     width: 103px;
     height: 24px;
     font-size: 16px;
 }
 .order h3{
+    font-family: "Sora-Regular";
     margin: 0;
     width: 69px;
     height: 14px;
@@ -212,6 +223,7 @@ body {
 }
 
 .counter-button {
+    background-color: var(--color-6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,7 +232,6 @@ body {
     align-items: center;
     font-size: 12px;
     border: 1px solid #ccc;
-    background-color: white;
     cursor: pointer;
     padding: 0;
     border-radius: 100px;
@@ -233,16 +244,18 @@ body {
     object-fit: contain; /* Asegura que la imagen no se deforme */
 }
 .counter-value {
+    font-family: "Sora-SemiBold";
     font-size: 14px;
     text-align: center;
 }
 .descuento {
+    text-decoration: none;
     display: flex;
     align-items: center; /* Centra verticalmente */
     border-radius: 16px;
     width: 327px;
     height: 56px;
-    background-color: #ccc;
+    background-color: var(--color-6);
     margin: 0 auto; /* Centra horizontalmente */
     padding-left: 16px; /* Espacio desde la izquierda */
 }
@@ -252,11 +265,19 @@ body {
     height: 20px;
     margin-right: 16px; /* Espacio entre la imagen y el texto */
 }
+.descuento .text {
+    display: inline-block;
+    text-decoration: none !important;
+}
 
 .descuento .text {
+    display: inline-block;
+    text-decoration: none !important;
+    color: black;
+    font-family: "Sora-SemiBold";
     width: 149px !important;
     height: 21px !important;
-    margin-top: 5px !important;
+    margin-top: 17.5px !important;
     font-size: 14px !important;
 }
 .img2{
@@ -266,22 +287,117 @@ body {
     display: block; /* Asegura que respete el tamaño */
     object-fit: contain; /* Ajusta la imagen sin deformarla */
 }
-.payment{
-    background-color: yellow;
-   
+.payment-summary {
+    margin-left: 24px;
+    height: 93px;
+    width: 327px; /* Ajusta el tamaño */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
 }
-.payment h1{
+
+h1 {
+    font-family: "Sora-SemiBold";
     font-size: 16px;
 }
-.label{
-    font-size: 14px;
-    background-color: blue;
-}
-.row-payment{
-    font-size: 14px;
-    background-color: red;
+
+.row-payment {
     display: flex;
+    justify-content: space-between; /* Separa la etiqueta a la izquierda y el precio a la derecha */
+    margin-bottom: 8px;
 }
-.payment.price{
-    margin-left: 247;
+
+.label {
+    font-size: 14px;
+    font-family: "Sora-Regular";
+}
+
+.price {
+    font-size: 14px;
+    font-family: "Sora-SemiBold";
+    color: black;
+}
+
+.discount {
+    color: var(--color-3);
+    text-decoration: line-through; /* Tacha el precio antiguo */
+    margin-right: 5px;
+}
+/* Contenedor principal */
+.cash-container {
+    margin: auto;
+    width: 370px; /* Ajusta el ancho máximo */
+    background-color: var(--color-6);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.cash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ícono de billetera */
+.wallet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Información de pago */
+.cash-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texto "Cash/Wallet" */
+.cash-info h1 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+/* Monto */
+.amount {
+    font-family: "Sora-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+    margin: 4px 0 0;
+}
+
+/* Icono de flecha */
+.dropdown-icon {
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+}
+
+/* Botón "Order" */
+.order-button {
+    margin: auto;
+    display: block;
+    width: 327px;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-6);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color: var(--color-1);
 }
