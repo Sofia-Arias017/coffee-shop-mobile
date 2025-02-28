@@ -11,8 +11,8 @@ background-color: #F9F2ED;
 width: 90%;
 max-width: 400px;
 margin: 0px auto;
-background: #FFFFFF; 
-padding: 60px 0px;
+background: #F9F2ED; 
+padding: 20px 0px;
 }
 
 header {
@@ -20,7 +20,9 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 position: relative;
-padding-bottom: 10px; 
+font-family: "Sora-SemiBold";
+padding-bottom: 30px; 
+color: var(--color-7);
 }
 
 .icon {
@@ -99,7 +101,11 @@ margin: 0px 5px 0px 160px;
 
 .linea{
     display: flex;
+    margin: 0; /* Quita márgenes si no lo necesitas */
+    padding: 0;    
+    display: flex;
     margin-top: -30px;
+    margin: 10;
 }
 
 .description_title {
@@ -157,7 +163,7 @@ align-items: center;
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-top: 20px;
+ margin-top: 25px; 
 }
 
 hr {
@@ -185,3 +191,4 @@ border-radius: 10px;
 cursor: pointer;
 font-weight: bold;
 }
+
