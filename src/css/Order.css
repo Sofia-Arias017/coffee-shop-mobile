@@ -1,0 +1,403 @@
+@import url(variables.css);
+body {
+    background-color: var(--color-22);
+    margin: 0; /* Elimina márgenes del body */
+}
+/* Contenedor del título */
+.tittle {
+    font-family: "Sora-SemiBold" ;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+}
+
+/* Título centrado */
+.tittle h1 {
+    top: 20px;
+    font-size: 20px;
+    font-family: "Sora-SemiBold" ;
+    /*margin: 0;*/
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el texto */
+}
+
+/* Botón atrás */
+.atras {
+    margin-left: 24px;
+    margin-top: 20px;
+    position: absolute;
+    left: 10px; /* Se mantiene fijo en la izquierda */
+    top: 50%;
+    transform: translateY(-50%); /* Lo centra verticalmente */
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+}
+
+
+/* Cambio de color cuando el cursor pasa encima */
+.atras:hover {
+    background-color: var(--color-8);
+}
+
+/* Cambio de color cuando se hace clic */
+.atras:active {
+    background-color: black;
+}
+
+/* Contenedor de los botones */
+.delivery-container {
+    background-color: var(--color-4);
+    width: 327px;
+    height: 43px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.delivery-option {
+    font-family: "Sora-SemiBold" ;
+    border-radius: 8px;
+    margin: 4px;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-4);
+}
+
+.delivery-option.selected {
+    background-color: var(--color-1);
+    color: white;
+}
+
+/* Alternar el color cuando se hace clic */
+.delivery-container:has(.delivery-option:nth-child(2):hover) .delivery-option {
+    background-color: var(--color-4);
+    color: black;
+}
+
+.delivery-container:has(.delivery-option:nth-child(2):hover) .delivery-option:nth-child(2) {
+    background-color: var(--color-1);
+    color: white;
+}
+.info{
+    position: relative; /* Permite usar left */
+    left: 24px;
+    margin: 0;
+    margin-top: 24px;
+    flex-direction: column;
+}
+.info h1{
+    font-family: "Sora-SemiBold" ;
+    font-size: 16px;
+}
+.info h2{
+    font-family: "Sora-SemiBold" ;
+    margin-top: 16px;
+    font-size: 14px;
+    display: block;
+}
+.info h3{
+    color: var(--color-8);
+    font-family: "Sora-Regular";
+    margin-top: -8px;
+    font-size: 12px;
+    display: block;
+}
+.edit{
+    font-family: "Sora-Regular";
+    display: flex;
+    width: 229px;
+    height: 26px;
+    gap: 8px;
+}
+.btn-edit {
+    background-color: var(--color-6);
+    border: 1px solid black;
+    display: flex;
+    align-items: center; /* Centra icono y texto verticalmente */
+    justify-content: center; /* Centra todo el contenido horizontalmente */
+    gap: 4px; /* Espacio entre icono y texto */
+
+    width: 120px;
+    height: 26px;
+    
+    font-size: 12px;
+    text-align: center;
+    
+    color: black;
+    text-decoration: none;
+    border-radius: 16px;
+    
+    cursor: pointer;
+}
+
+.btn-edit img {
+    width: 14px;
+    height: 14px;
+    display: inline-block; /* Cambio importante */
+}
+
+.btn-edit2 {
+    background-color: var(--color-6);
+    border: 1px solid black;
+    display: flex;
+    align-items: center; /* Centra icono y texto verticalmente */
+    justify-content: center; /* Centra todo el contenido horizontalmente */
+    gap: 4px; /* Espacio entre icono y texto */
+
+    width: 101px;
+    height: 26px;
+    
+    font-size: 12px;
+    text-align: center;
+    
+    color: black;
+    text-decoration: none;
+    border-radius: 16px;
+    
+    cursor: pointer;
+}
+
+.btn-edit2 img {
+    width: 14px;
+    height: 14px;
+    display: inline-block; /* Cambio importante */
+}
+
+.order{
+    position: relative; /* Permite usar left */
+    left: 24px;
+    margin-top: 16px;
+    display: flex;
+    width: 327px;
+    height: 54px;
+}
+.order img{
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+}
+.text-order{
+    margin-left: 16px;
+    margin-top: 6px;
+}
+.order h1{
+    font-family: "Sora-SemiBold";
+    margin: 0;
+    width: 103px;
+    height: 24px;
+    font-size: 16px;
+}
+.order h3{
+    font-family: "Sora-Regular";
+    margin: 0;
+    width: 69px;
+    height: 14px;
+    font-size: 12px;
+}
+.button-selection{
+    margin-left: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.counter-button {
+    background-color: var(--color-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.counter-button img{
+    width: 100%;  /* Ajusta el tamaño de la imagen */
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+.counter-value {
+    font-family: "Sora-SemiBold";
+    font-size: 14px;
+    text-align: center;
+}
+.descuento {
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    border-radius: 16px;
+    width: 327px;
+    height: 56px;
+    background-color: var(--color-6);
+    margin: 0 auto; /* Centra horizontalmente */
+    padding-left: 16px; /* Espacio desde la izquierda */
+}
+
+.descuento img {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px; /* Espacio entre la imagen y el texto */
+}
+.descuento .text {
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.descuento .text {
+    display: inline-block;
+    text-decoration: none !important;
+    color: black;
+    font-family: "Sora-SemiBold";
+    width: 149px !important;
+    height: 21px !important;
+    margin-top: 17.5px !important;
+    font-size: 14px !important;
+}
+.img2{
+    width: 20px !important;
+    height:20px !important;
+    margin-left: 96.46px;
+    display: block; /* Asegura que respete el tamaño */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+}
+.payment-summary {
+    margin-left: 24px;
+    height: 93px;
+    width: 327px; /* Ajusta el tamaño */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: "Sora-SemiBold";
+    font-size: 16px;
+}
+
+.row-payment {
+    display: flex;
+    justify-content: space-between; /* Separa la etiqueta a la izquierda y el precio a la derecha */
+    margin-bottom: 8px;
+}
+
+.label {
+    font-size: 14px;
+    font-family: "Sora-Regular";
+}
+
+.price {
+    font-size: 14px;
+    font-family: "Sora-SemiBold";
+    color: black;
+}
+
+.discount {
+    color: var(--color-3);
+    text-decoration: line-through; /* Tacha el precio antiguo */
+    margin-right: 5px;
+}
+/* Contenedor principal */
+.cash-container {
+    margin: auto;
+    width: 370px; /* Ajusta el ancho máximo */
+    background-color: var(--color-6);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.cash-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ícono de billetera */
+.wallet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Información de pago */
+.cash-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Texto "Cash/Wallet" */
+.cash-info h1 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+/* Monto */
+.amount {
+    font-family: "Sora-SemiBold";
+    font-size: 14px;
+    color: var(--color-1);
+    margin: 4px 0 0;
+}
+
+/* Icono de flecha */
+.dropdown-icon {
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+}
+
+/* Botón "Order" */
+.order-button {
+    margin: auto;
+    display: block;
+    width: 327px;
+    text-align: center;
+    background-color: var(--color-1);
+    color: var(--color-6);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.order-button:hover {
+    background-color: var(--color-1);
+}
