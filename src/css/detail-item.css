@@ -183,6 +183,7 @@ color: #A2A2A2;
 }
 
 .buy_btn {
+    text-decoration: none;
 background-color: #C67C4E; 
 color: #FFFFFF; 
 padding: 17px 60px;
