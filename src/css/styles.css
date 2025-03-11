@@ -1,0 +1,29 @@
+@import url(variables.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+a {
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    background-color: var(--color-1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+a:hover {
+    background-color: var(--color-15);
+    transform: scale(1.05);
+}
